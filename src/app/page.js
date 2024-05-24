@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Header from "./components/header";
 import styles from "./page.module.css";
 export default async function Home() {
-const response = await fetch("https://fakestoreapi.com/products/");
+const response = await fetch("https://api.escuelajs.co/api/v1/products");
 const data = await response.json();
 
   return (
