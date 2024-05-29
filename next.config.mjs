@@ -2,7 +2,8 @@
 const nextConfig = {
     images:{
         domains:[
-            "fakestoreapi"
+            "fakestoreapi.com",
+            "https://www.flaticon.com"
         ]
     }
 };
