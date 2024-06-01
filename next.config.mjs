@@ -5,7 +5,7 @@ const nextConfig = {
             "fakestoreapi.com",
             "https://www.flaticon.com"
         ]
-    }
+    },
 };
 
 export default nextConfig;
