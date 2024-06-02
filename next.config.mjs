@@ -4,7 +4,8 @@ const nextConfig = {
         domains:[
             "fakestoreapi.com",
             "www.flaticon.com",
-            "www.canva.com"
+            "www.canva.com",
+            "img.freepik.com"
         ]
     },
 };

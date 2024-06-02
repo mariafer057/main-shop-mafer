@@ -1,8 +1,7 @@
 .imgs{
     position: absolute;
     right: 20px;
-    width: 30px;
-    height: auto;
+
 }
 .letra{
     font-family: "Poppins", sans-serif;
@@ -21,4 +20,7 @@
     display: flex;
     padding: 30px;
     align-items: center;
+}
+.logo{
+    position: absolute;
 }

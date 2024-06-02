@@ -9,13 +9,13 @@ export default async function Main(){
     <main className={styles.main}>
       {data.map((products)=> 
             <div className={styles.card} key={products.id}>
-              <h2>Titulo{products.title}</h2>
-              <h2>Preço{products.price}</h2>
-              <h2>Descrição{products.description}</h2>
-              <h2>Categoria{products.category}</h2>
+              <h2>Titulo: {products.title}</h2>
+              <h2>Preço: {products.price}</h2>
+              <h2 className={styles.desc}>Descrição: {products.description}</h2>
+              <h2>Categoria: {products.category}</h2>
               <Image 
-              width= {100}
-              height={100}
+              width= {150}
+              height={150}
               src={products.image}/>
             </div>
       )}

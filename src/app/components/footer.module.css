@@ -1,3 +1,11 @@
 .rodapes{
     background-color: rgb(9, 34, 57);
+    align-items: center;
+}
+.redes{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-right: 10px;
 }

@@ -8,11 +8,17 @@
     background-color: rgb(51, 82, 82);
 }
 .card{
-    width: 400px;
+    font-family: "Poppins", sans-serif;
+    width: 450px;
+    text-align: center;
+    font-size: 14px;
     height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 36px;
     background-color: rgb(2, 118, 118);
+}
+.desc{
+    font-size: 12px;
 }
