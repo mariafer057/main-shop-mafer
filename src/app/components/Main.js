@@ -14,8 +14,8 @@ export default async function Main(){
               <h2>Descrição{products.description}</h2>
               <h2>Categoria{products.category}</h2>
               <Image 
-              width= {300}
-              height={300}
+              width= {100}
+              height={100}
               src={products.image}/>
             </div>
       )}

@@ -3,7 +3,8 @@ const nextConfig = {
     images:{
         domains:[
             "fakestoreapi.com",
-            "https://www.flaticon.com"
+            "www.flaticon.com",
+            "www.canva.com"
         ]
     },
 };
