@@ -5,7 +5,7 @@ const nextConfig = {
             "fakestoreapi.com",
             "www.flaticon.com",
             "www.canva.com",
-            "img.freepik.com"
+           "icons8.com"
         ]
     },
 };

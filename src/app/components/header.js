@@ -9,13 +9,13 @@ export default function Header(){
             
                 Bem-vindo!
                 <br/>
-                Compre o que desejar
+                Compre o que desejar, naquele preçinho :)
                 <button className={styles.botao}>Novo Produto</button>
                
                 <img className={styles.logo}
-              width= {70}
-              height={68}
-              src="https://img.freepik.com/vetores-gratis/design-de-logotipo-local-de-loja-desenhada-a-mao_23-2149575769.jpg"/>
+              width= {40}
+              height={40}
+              src="https://img.icons8.com/ios-filled/50/minecraft-logo.png"/>
 
                 <img className={styles.imgs}
               width= {30}

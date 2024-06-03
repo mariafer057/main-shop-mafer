@@ -6,6 +6,8 @@
     flex-wrap: wrap;
     gap: 50px;
     background-color: rgb(51, 82, 82);
+    color: aliceblue;
+    /*height: 100vh; está dando erro, a cor pega apenas uma parte*/
 }
 .card{
     font-family: "Poppins", sans-serif;
@@ -21,4 +23,7 @@
 }
 .desc{
     font-size: 12px;
+}
+.titulo{
+    font-size: 15px;
 }

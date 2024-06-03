@@ -1,6 +1,12 @@
 .rodapes{
     background-color: rgb(9, 34, 57);
     align-items: center;
+    height: 100px;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    display: grid;
+    text-align: center;
 }
 .redes{
     padding: 0;
@@ -8,4 +14,22 @@
     justify-content: center;
     font-size: 25px;
     margin-right: 10px;
+    padding-inline: 9px;
+
+}
+.redes span{
+    margin-right: 90px;
+}
+.redes li{
+    list-style: none;/*não lembrava como tirar aquela bolinha que fica na lista não-ordenada, então procurei um video no youtube => https://youtu.be/fi3pKwIdndU?si=QcSiZYV2aHoIi9ga*/
+}
+.rodapes p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+.logo{
+    position: absolute;
+    right: 50px;
+    padding-inline: 9px;
 }

@@ -7,20 +7,26 @@
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     padding: 10px;
+    font-weight: bold;
 }
 .botao{
     position: absolute;
     right: 100px;
     padding: 10px 15px;
+    border-radius: 25px;
     height: auto;
+    border-color: aliceblue;
     background-color: rgb(9, 34, 57);
     color: aliceblue;
 }
-.cabecalhos{
-    display: flex;
-    padding: 30px;
-    align-items: center;
-}
 .logo{
     position: absolute;
+    padding-inline: 9px;
+}
+.cebecalhos{
+    background-color: rgb(9, 34, 57);
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    font-size: 15px;
 }
