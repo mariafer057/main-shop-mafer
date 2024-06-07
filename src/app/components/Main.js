@@ -13,7 +13,7 @@ export default async function Main(){
               <h2>Preço: {products.price}</h2>
               <h2 className={styles.desc}>Descrição: {products.description}</h2>
               <h2>Categoria: {products.category}</h2>
-              <h2>Estoque: {products.rating}</h2>
+              <h2>Estoque: {products.rating.count}</h2>
 
               <Image 
               width= {150}

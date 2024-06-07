@@ -16,7 +16,7 @@
     border-radius: 25px;
     height: auto;
     border-color: aliceblue;
-    background-color: rgb(9, 34, 57);
+    background-color: rgb(19, 63, 104);
     color: aliceblue;
 }
 .logo{
@@ -24,7 +24,7 @@
     padding-inline: 9px;
 }
 .cebecalhos{
-    background-color: rgb(9, 34, 57);
+    background-color: rgb(19, 63, 104);
     display: flex;
     color: aliceblue;
     align-items: center;
