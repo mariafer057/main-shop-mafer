@@ -27,3 +27,11 @@
 .titulo{
     font-size: 15px;
 }
+.botao{
+    background-color: rgb(1, 66, 122);
+    color: aliceblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    border-color: aliceblue;
+}
