@@ -4,18 +4,16 @@ import Header from "./header";
 import NotFound from "../not-found";
 import styles from "./main.module.css"
 import { useEffect, useState } from "react";
+import Spinner from "./Spinner";
 export default function Main(){
 
   const [listProdutos, setListaProdutos] = useState([]);
-  const [listPrecoMaior, setListaPrecoMaior] = useState([]);
 
   useEffect(()=>{
     const getProduct = async()=>{
       const response = await fetch("https://fakestoreapi.com/products");
       const data = await response.json();
       setListaProdutos(data);
-      setListaPrecoMaior(data);
-
     }
     getProduct();
   }, []);
@@ -36,15 +34,27 @@ export default function Main(){
       setListaProdutos(newList);
     }
 
-   const precoMaior = () =>{
-      const newList = [...listPrecoMaior].sort((a, b)=>
-        b.price.localeCompare(a.price)
+    const precoMaior = () =>{
+      let newList = [...listProdutos].sort((a, b)=>
+        a.price - b.price
       );
-      setListaPrecoMaior(newList);
+      setListaProdutos(newList);
+    }
+
+
+   const precoMenor = () =>{
+      let newList = [...listProdutos].sort((a, b)=>
+        a.price - b.price
+      );
+      newList = newList.reverse();
+      setListaProdutos(newList);
     }
   
-  
-  return ( 
+    if(listProdutos[0] == null){
+      return <center><Spinner/></center>
+    }
+
+    return ( 
     <>
     <main className={styles.main}>
     <div>
@@ -56,7 +66,11 @@ export default function Main(){
     </div>
 
     <div>
-    <button className={styles.botao} onClick={precoMaior}>+</button>
+    <button className={styles.botao} onClick={precoMaior}>-</button>
+    </div>
+
+    <div>
+    <button className={styles.botao} onClick={precoMenor}>+</button>
     </div>
 
       {listProdutos.map((products)=> 
