@@ -8,15 +8,21 @@ import Spinner from "./Spinner";
 export default function Main(){
 
   const [listProdutos, setListaProdutos] = useState([]);
+  const [listComplete, setListComplete] = useState([]);
+  const [search, setSearch] = useState("");
+
+
 
   useEffect(()=>{
     const getProduct = async()=>{
       const response = await fetch("https://fakestoreapi.com/products");
       const data = await response.json();
       setListaProdutos(data);
+      setListComplete(data)
     }
     getProduct();
   }, []);
+
 
 
     const orderAz = () =>{
@@ -50,6 +56,14 @@ export default function Main(){
       setListaProdutos(newList);
     }
   
+
+    
+  const searchText = (text) => {
+    setSearch(text);
+    
+  }
+
+
     if(listProdutos[0] == null){
       return <center><Spinner/></center>
     }
